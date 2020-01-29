@@ -23,6 +23,7 @@ function CheckProjectExists(req, res, next) {
     next();
 }
 
+// Get all projects
 server.get('/projects', (req, res) => {
     return res.json(projects);
 })
